@@ -6,13 +6,21 @@ public class EmpleadoPorHoras extends Empleado {
         super.setSalarioBase(calcularSalario());
         this.genero = genero;
     }
-
+/* 
+Pull Up Method
+/* 
     @Override
     public void imprimirDetalles() {
       super.imprimirDetalles();
         System.out.println("Género: " + genero);
         System.out.println("Tarifa por hora: " + super.getTarifaHora());
         System.out.println("Salario calculado: " + calcularSalario());
+    }
+*/
+    @Override
+    public void imprimirDetalles() {
+        super.imprimirDetalles();
+        System.out.println("Género: " + genero);
     }
 
     @Override
