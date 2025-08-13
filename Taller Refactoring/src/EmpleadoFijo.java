@@ -8,13 +8,11 @@ public class EmpleadoFijo extends Empleado {
         this.genero = genero;
     }
 
+    @Override
     public void imprimirDetalles() {
-        System.out.println("Nombre: " + super.getNombre());
-        System.out.println("Genero: " + super.getNombre());
-        System.out.println("Salario: " + super.getSalarioBase());
-        System.out.println("Horas trabajadas: " + super.getHorasTrabajadas());
-        System.out.println("Departamento: " + super.getDepartamento());
-        System.out.println("bonoAnual: " + bonoAnual);
+        super.imprimirDetalles();
+        System.out.println("Bono Anual: " + bonoAnual);
+        System.out.println("Género: " + genero);
     }
 
     // Más metodos

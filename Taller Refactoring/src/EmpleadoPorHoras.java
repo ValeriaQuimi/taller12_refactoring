@@ -7,12 +7,12 @@ public class EmpleadoPorHoras extends Empleado {
         this.genero = genero;
     }
 
+    @Override
     public void imprimirDetalles() {
-        System.out.println("Nombre: " + super.getNombre());
-        System.out.println("Genero: " + super.getNombre());
-        System.out.println("Salario: " + super.getSalarioBase());
-        System.out.println("Horas trabajadas: " + super.getHorasTrabajadas());
-        System.out.println("Departamento: " + super.getDepartamento());
+      super.imprimirDetalles();
+        System.out.println("Género: " + genero);
+        System.out.println("Tarifa por hora: " + super.getTarifaHora());
+        System.out.println("Salario calculado: " + calcularSalario());
     }
 
     @Override

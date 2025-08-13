@@ -81,5 +81,14 @@ public class Empleado {
         this.departamento = departamento;
     }
 
+
+    //Aplicacion de pulll up method
+    public void imprimirDetalles() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Salario Base: " + salarioBase);
+        System.out.println("Horas Trabajadas: " + horasTrabajadas);
+        System.out.println("Departamento: " + departamento);
+      
+    }
     // Más metodos
 }
